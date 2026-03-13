@@ -1,6 +1,10 @@
-import { RouterProvider } from 'react-router-dom'
-import { router } from './app/router'
+import { HashRouter } from "react-router-dom";
+import { Router } from "./app/router"; // your routes as JSX elements
 
 export default function App() {
-  return <RouterProvider router={router} />
+  return (
+    <HashRouter>
+      <Router /> {/* Render your route components */}
+    </HashRouter>
+  );
 }
